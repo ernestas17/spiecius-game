@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Žaidmai | Dėlionė - Spiečius</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles/1_variables.css" />
+    <link rel="stylesheet" href="../styles/2_resets.css" />
+    <link rel="stylesheet" href="../styles/3_header.css" />
+    <link rel="stylesheet" href="../styles/4_main.css" />
+    <link rel="stylesheet" href="../styles/5_delione.css" />
+    <link rel="stylesheet" href="../styles/6_footer.css" />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom JS -->
+    <script src="../scripts/1_header.js" defer></script>
+    <script src="../scripts/2_delione.js" defer></script>
+    <script src="../scripts/3_footer.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- header.js generates header inner elements -->
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="container">
+          <div class="headline">
+            <h1>Dėlionė</h1>
+            <p id="instructions">Instrukcija</p>
+          </div>
+          <div class="game">
+            <div></div>
+            <div class="game__controls">
+              <button id="start-btn" class="btn btn-start">PRADĖTI</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        <span id="current-year"></span> Visos teisės saugomos | IT sprendimas:
+        edigino.com
+      </p>
+    </footer>
+  </body>
+</html>

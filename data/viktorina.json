@@ -1,0 +1,586 @@
+[
+  {
+    "question": "Kiek kainuoja darbo vieta 'Spiečiuje'?",
+    "answers": [
+      {
+        "text": "99 Eur",
+        "correct": false
+      },
+      {
+        "text": "200 Eur ",
+        "correct": false
+      },
+      {
+        "text": "365 Eur",
+        "correct": false
+      },
+      {
+        "text": "Nemokamai",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Kokio dydžio finansinę subsidiją gali gauti 'Spiečiaus' nariai?",
+    "answers": [
+      {
+        "text": "Iki 1 tūkst. Eur",
+        "correct": false
+      },
+      {
+        "text": "Iki 5 tūkst. Eur",
+        "correct": false
+      },
+      {
+        "text": "Iki 10 tūkst. Eur",
+        "correct": false
+      },
+      {
+        "text": "Iki 15 tūkst. Eur",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Kas gali pasinaudoti akcija 'Vasara Spiečiuje' ir nemokamai naudotis bendradarbystės centrų „Spiečius” darbo vietomis?",
+    "answers": [
+      {
+        "text": "Tik darbuotojai",
+        "correct": false
+      },
+      {
+        "text": "Bet kas (Visi)",
+        "correct": true
+      },
+      {
+        "text": "Bitutės",
+        "correct": false
+      },
+      {
+        "text": "Tik nariai",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Keliuose Lietuvos miestuose yra įsikūrę bendradarbystės centrai „Spiečius”?",
+    "answers": [
+      {
+        "text": "14",
+        "correct": true
+      },
+      {
+        "text": "12",
+        "correct": false
+      },
+      {
+        "text": "13",
+        "correct": false
+      },
+      {
+        "text": "15",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Kiek tęsiasi individuali mentoriaus pagalba dalyvaujantiem Mentorystės programoje?",
+    "answers": [
+      {
+        "text": "1-2 mėn.",
+        "correct": false
+      },
+      {
+        "text": "3-4 mėn.",
+        "correct": false
+      },
+      {
+        "text": "5-7 mėn.",
+        "correct": false
+      },
+      {
+        "text": "8-9 mėn.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Per kiek laiko, savarankiškai, galima užbaigti „Verslo e. gidas“ mokymų programą?",
+    "answers": [
+      {
+        "text": "Per 2-3 val.",
+        "correct": false
+      },
+      {
+        "text": "Per 5-6 val.",
+        "correct": true
+      },
+      {
+        "text": "Per 10-12 val.",
+        "correct": false
+      },
+      {
+        "text": "Per 15-18 val.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Per kiek laiko galima atlikti savo verslo diagnostiką, naudojantis skaitmeniniu įrankiu 'Verslo diagnostika'?",
+    "answers": [
+      {
+        "text": "Per 1-2 val.",
+        "correct": false
+      },
+      {
+        "text": "Per 60 minučių",
+        "correct": false
+      },
+      {
+        "text": "Per 40 minučių",
+        "correct": false
+      },
+      {
+        "text": "Vos per 20 minučių",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Kiek laiko galioja 'Spiečiaus' narystės sutartis?",
+    "answers": [
+      {
+        "text": "6 mėn.",
+        "correct": false
+      },
+      {
+        "text": "8 mėn.",
+        "correct": false
+      },
+      {
+        "text": "12 mėn.",
+        "correct": false
+      },
+      {
+        "text": "18 mėn.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Kokie pagrindiniai reikalavimai, norint tapti 'Spiečiaus' nariu?",
+    "answers": [
+      {
+        "text": "Oficialiai vykdoma veikla, ne ilgiau kaip 1 metai.",
+        "correct": false
+      },
+      {
+        "text": "Oficialiai vykdoma veikla, ne ilgiau kaip 2 metus.",
+        "correct": false
+      },
+      {
+        "text": "Oficialiai vykdoma veikla, ne ilgiau kaip 5 metus.",
+        "correct": true
+      },
+      {
+        "text": "Neoficialiai vykdoma veikla, ne ilgiau kaip 5 metus.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Kas yra 'Spiečiaus' alumni narys?",
+    "answers": [
+      {
+        "text": "'Spiečiaus' partneriai",
+        "correct": false
+      },
+      {
+        "text": "Mentoriai",
+        "correct": false
+      },
+      {
+        "text": "Narys, kurio sutartis pasibaigusi.",
+        "correct": true
+      },
+      {
+        "text": "'Spiečiaus' nariai",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Kiek valandų per parą gali naudotis 'Spiečiaus' nariai bendradarbystės erdve?",
+    "answers": [
+      {
+        "text": "24 valandas per dieną",
+        "correct": true
+      },
+      {
+        "text": "12 valandų per dieną",
+        "correct": false
+      },
+      {
+        "text": "'8 valandas per dieną",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Kokia įranga yra įrengta 'Spiečiaus' bendradarbystės erdvėje?",
+    "answers": [
+      {
+        "text": "Tik staliukai ir kėdės",
+        "correct": false
+      },
+      {
+        "text": "Kompiuterizuotos darbo vietos",
+        "correct": true
+      },
+      {
+        "text": "'Spiečiaus' žurnalas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Ar 'Spiečiaus' nariai gali naudotis kitų miestų bendradarbystės centrais?",
+    "answers": [
+      {
+        "text": "Ne, tai neįmanoma dėl sutarties",
+        "correct": false
+      },
+      {
+        "text": "Tik po išankstinio užsakymo",
+        "correct": false
+      },
+      {
+        "text": "Taip, galima naudotis kitų miestų bendradarbystės centrais",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Kokioms reikmėms galima naudotis 'Spiečiaus' bendradarbystės erdve, be darbo?",
+    "answers": [
+      {
+        "text": "Tiktai darbo reikmėms",
+        "correct": false
+      },
+      {
+        "text": "Susitikimams ir laisvalaikiui",
+        "correct": true
+      },
+      {
+        "text": "Tik pamokoms",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Kokia yra verslo įgūdžių mokymų ir renginių temų įvairovė 'Spiečiuose'?",
+    "answers": [
+      {
+        "text": "Verslo komunikacija, rinkodara, investuotojų paieška ir daugiau",
+        "correct": true
+      },
+      {
+        "text": "Tik investuotojų paieška",
+        "correct": false
+      },
+      {
+        "text": "Tik verslo komunikacija",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Ar 'Spiečiaus' renginiai ir mokymai yra prieinami tik nariams?",
+    "answers": [
+      {
+        "text": "Taip, tik nariams",
+        "correct": false
+      },
+      {
+        "text": "Tik tuomet, kai yra laisvų vietų",
+        "correct": false
+      },
+      {
+        "text": "Ne, jie yra prieinami visiems",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Kur galite rasti informaciją apie artėjančius 'Spiečiaus' renginius?",
+    "answers": [
+      {
+        "text": "Tik tinkle",
+        "correct": false
+      },
+      {
+        "text": "'Spiečiaus' svetainėje ir socialinėse žiniasklaidos platformose",
+        "correct": true
+      },
+      {
+        "text": "Tik telefonu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Kokia pagrindinė individualių verslo konsultacijų sritis 'Spiečiuose'?",
+    "answers": [
+      {
+        "text": "Verslo finansavimas, mokesčiai, teisinės formos pasirinkimas ir kt.",
+        "correct": true
+      },
+      {
+        "text": "Tik technologijos",
+        "correct": false
+      },
+      {
+        "text": "Tik rinkodara",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Ar individualios verslo konsultacijos yra prieinamos tik 'Spiečių' nariams?",
+    "answers": [
+      {
+        "text": "Taip, tik nariams",
+        "correct": false
+      },
+      {
+        "text": "Ne, jos yra prieinamos visiems",
+        "correct": true
+      },
+      {
+        "text": "Tik tuomet, kai yra laisvų konsultacijų vietų",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Koks pagrindinis 'Spiečių' verslo mentorystės programos tikslas?",
+    "answers": [
+      {
+        "text": "Padėti augti siekiantiems verslininkams ir išspręsti iššūkius",
+        "correct": true
+      },
+      {
+        "text": "Rengti verslininkus dalyvauti konkurse",
+        "correct": false
+      },
+      {
+        "text": "Tik verslo idejos kūrimas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Kas yra mentorystės programos mentoriai?",
+    "answers": [
+      {
+        "text": "Tik jauni verslininkai",
+        "correct": false
+      },
+      {
+        "text": "Tik 'Spiečių' nariai",
+        "correct": false
+      },
+      {
+        "text": "Patyrę verslininkai ir sričių specialistai",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Kiek laiko trunka 'Spiečių' verslo mentorystės programa?",
+    "answers": [
+      {
+        "text": "8-9 mėnesiai",
+        "correct": true
+      },
+      {
+        "text": "12 mėnesių",
+        "correct": false
+      },
+      {
+        "text": "3-4 mėnesiai",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Kokia yra maksimali dalyvių amžiaus riba „Come+Test+Grow“ programoje?",
+    "answers": [
+      {
+        "text": "18 metų",
+        "correct": false
+      },
+      {
+        "text": "30 metų",
+        "correct": true
+      },
+      {
+        "text": "25 metų",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Kokia yra pagrindinė „Come+Test+Grow“ programos paskirtis?",
+    "answers": [
+      {
+        "text": "Suteikti jaunimui pasimatymo galimybę",
+        "correct": false
+      },
+      {
+        "text": "Padėti jaunimui išlaikyti egzaminus",
+        "correct": false
+      },
+      {
+        "text": "Testuoti verslo idėjas ir įgyti verslo vystymo žinių",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Kas suteikia pagalbą dalyviams „Come+Test+Grow“ programoje?",
+    "answers": [
+      {
+        "text": "Ekspertai teikia individualias konsultacijas ir praktinę pagalbą",
+        "correct": true
+      },
+      {
+        "text": "Tiktai dalyvių šeimos nariai",
+        "correct": false
+      },
+      {
+        "text": "Tik kitų programos dalyvių bendradarbiai",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Ką daro ekspertai su verslo idėjų autoriais „Come+Test+Grow“ programoje?",
+    "answers": [
+      {
+        "text": "Tik žiūri verslo idėjų pristatymus",
+        "correct": false
+      },
+      {
+        "text": "Padeda pasirinkti idėjos testavimo metodą ir siekti tikslų",
+        "correct": true
+      },
+      {
+        "text": "Tikrina dalyvių amžių",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Kam finansinės 'Spiečių' subsidijos yra skirtos?",
+    "answers": [
+      {
+        "text": "Tik pradedantiems verslininkams",
+        "correct": false
+      },
+      {
+        "text": "Tik ilgametėms įmonėms",
+        "correct": false
+      },
+      {
+        "text": "Verslo skaitmeninimo sprendimų diegimui",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Ar finansinės subsidijos yra prieinamos tik 'Spiečių' bendradarbystės centro nariams?",
+    "answers": [
+      {
+        "text": "Ne, jos yra prieinamos visiems verslininkams",
+        "correct": true
+      },
+      {
+        "text": "Tik tuo atveju, jei įmonė įregistruota Kaune arba Klaipėdoje",
+        "correct": false
+      },
+      {
+        "text": "Taip, tik nariams",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Kokia yra 'Spiečių' finansinių subsidijų paskirtis?",
+    "answers": [
+      {
+        "text": "Tik reklamai",
+        "correct": false
+      },
+      {
+        "text": "Verslo plėtrai, susijusiai su skaitmeninimo sprendimais",
+        "correct": true
+      },
+      {
+        "text": "Tik administraciniams išlaidoms padengti",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Kiek regionų verslininkų vienija „Spiečius“?",
+    "answers": [
+      {
+        "text": "50 regionų verslininkai",
+        "correct": false
+      },
+      {
+        "text": "100 regionų verslininkai",
+        "correct": false
+      },
+      {
+        "text": "Daugiau nei 300 regionų verslininkų",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Kam bus skirta naujoji 'Spiečių' Kauno bendradarbystės centro programa?",
+    "answers": [
+      {
+        "text": "Jaunimui iki 30 metų, norintiems pradėti verslą ar plėsti verslą",
+        "correct": true
+      },
+      {
+        "text": "Tik studentams",
+        "correct": false
+      },
+      {
+        "text": "Tik verslo veteranams",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Kokia programa bus siūloma jaunimui 'Spiečių' Kaune?",
+    "answers": [
+      {
+        "text": "Tik verslo idėjų rinkinys",
+        "correct": false
+      },
+      {
+        "text": "Tik ekonomikos mokslai",
+        "correct": false
+      },
+      {
+        "text": "Programa, padedanti ištestuoti ir įgyvendinti verslo idėjas su ekspertų pagalba",
+        "correct": true
+      }
+    ]
+  }
+]

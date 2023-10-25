@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'DIN Next LT Pro Regular';
+  src: url('../assets/general/fonts/DIN\ Next\ LT\ Pro\ Regular.ttf')
+      format('woff2'),
+    url('../assets/general/fonts/DIN\ Next\ LT\ Pro\ Regular.ttf')
+      format('woff');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+div,
+p,
+li,
+button,
+a,
+span,
+i {
+  font-family: var(--body-font);
+}

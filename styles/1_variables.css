@@ -1,0 +1,16 @@
+:root {
+  --light-color: rgb(255, 255, 255);
+  --dark-color: rgb(0, 0, 0);
+
+  --accent-color: rgb(137, 141, 141);
+
+  --extra-1-color: rgb(253, 234, 14);
+  --extra-2-color: rgb(110, 206, 178);
+  --extra-3-color: rgb(199, 178, 222);
+
+  --correct-color: rgb(57, 119, 57);
+  --wrong-color: rgb(211, 86, 86);
+
+  --heading-font: 'Bebas Neue', sans-serif;
+  --body-font: 'DIN Next LT Pro Regular', sans-serif;
+}

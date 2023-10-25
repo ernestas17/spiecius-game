@@ -1,0 +1,244 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--extra-1-color);
+}
+
+.wrapper .container {
+  width: 100%;
+  height: 100%;
+  max-width: 1024px;
+  background-color: var(--light-color);
+  background-image: url('../assets/general/images/background/background.png');
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .container .headline {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.wrapper .container .headline h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.wrapper .container .headline p {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.game {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.game__controls {
+  width: 80%;
+  display: flex;
+  flex-direction: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Utilities */
+.btn {
+  text-decoration: none;
+  text-align: center;
+  color: var(--dark-color);
+  padding: 0.75rem 2rem;
+  border: 2px solid var(--dark-color);
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  background-color: var(--light-color);
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--extra-1-color);
+  color: var(--dark-color);
+}
+
+.btn-start {
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+  .wrapper .container {
+    border: 15px solid var(--dark-color);
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+/** */
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  color: var(--dark-color);
+  font-size: 1.5em;
+}
+
+.game-container {
+  margin: 25px auto;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 5px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.card {
+  position: relative;
+  height: 90px;
+  width: 70px;
+}
+
+.card-face {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 -1px 13px 0 #e8e8e8;
+  border-style: solid;
+  border-width: 2px;
+  overflow: hidden;
+  transition: transform 500ms ease-in-out;
+  backface-visibility: hidden;
+}
+
+.card.visible .card-back {
+  transform: rotateY(-180deg);
+}
+
+.card.visible .card-front {
+  transform: rotateY(0);
+}
+
+.card.matched .card-front .card-value {
+  animation: dance 1s linear infinite 500ms;
+}
+
+.card-back {
+  background-color: var(--light-color);
+  border-color: var(--light-color);
+  transform: rotateY(0);
+}
+
+.logo {
+  padding: 0.25rem;
+  object-fit: contain;
+  align-self: flex-start;
+  transition: transform 100ms ease-in-out;
+}
+
+.card-value {
+  padding: 0.25rem;
+  position: relative;
+  transition: transform 100ms ease-in-out;
+  transform: scale(0.9);
+}
+
+.card-front:hover .card-value {
+  transform: scale(1);
+}
+
+.card-front {
+  background-color: var(--light-color);
+  border-color: var(--extra-2-color);
+  transform: rotateY(180deg);
+}
+
+@keyframes dance {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 10em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .game-container {
+    gap: 10px;
+  }
+
+  .easy.game-container {
+    grid-template-columns: repeat(5, auto);
+  }
+
+  .medium.game-container {
+    grid-template-columns: repeat(5, auto);
+  }
+
+  .hard.game-container {
+    grid-template-columns: repeat(10, auto);
+  }
+
+  .easy.game-container .card {
+    height: 175px;
+    width: 125px;
+  }
+
+  .medium.game-container .card {
+    height: 125px;
+    width: 100px;
+  }
+
+  .hard.game-container .card {
+    height: 100px;
+    width: 75px;
+  }
+}
+
+.hide {
+  display: none;
+}
