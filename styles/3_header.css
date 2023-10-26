@@ -5,6 +5,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: var(--extra-1-color);
 }
 
 header nav ul {
@@ -25,7 +27,7 @@ header nav ul li a {
   font-family: var(--body-font);
   text-decoration: none;
   color: var(--dark-color);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 

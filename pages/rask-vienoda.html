@@ -19,6 +19,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="../assets/general/images/logo/favicon.png"
+      type="image/png"
+    />
     <!-- Custom JS -->
     <script src="../scripts/1_header.js" defer></script>
     <script src="../scripts/2_rask-vienoda.js" defer></script>
@@ -33,7 +39,14 @@
         <div class="container">
           <div class="headline">
             <h1>Rask vienodą</h1>
-            <p id="instructions">Instrukcija</p>
+            <h4>„Spieciaus” paslaugos</h4>
+            <p id="instructions">
+              Žaidimo tikslas yra atvesrsti visas korteles, kurose pateiktos
+              <strong>„Spieciaus” paslaugos</strong>, per duotą laiką su kuo
+              mažiau bandymų. Kortelė lieka atversta jeigu randate antrą tokią
+              pačią. <br /><br />
+              <strong>Pasirinkite lygį:</strong>
+            </p>
           </div>
           <div class="game">
             <div class="game-container hide">
@@ -50,6 +63,10 @@
                 VIDUTINIS
               </button>
               <button id="start-btn-hard" class="btn btn-start">SUNKUS</button>
+            </div>
+            <div class="game-results-container hide">
+              <p id="result" class="pulse-text"></p>
+              <a href="./rask-vienoda.html" class="btn">Kartoti</a>
             </div>
           </div>
         </div>

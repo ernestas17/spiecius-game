@@ -1,5 +1,6 @@
 // Variables
 const wrapperElement = document.querySelector('.wrapper');
+const containerElement = document.querySelector('.container');
 const startBtnEasyElement = document.querySelector('#start-btn-easy');
 const startBtnMediumElement = document.querySelector('#start-btn-medium');
 const startBtnHardElement = document.querySelector('#start-btn-hard');
@@ -7,11 +8,13 @@ const startBtnHardElement = document.querySelector('#start-btn-hard');
 const headlineBlockElement = document.querySelector('.headline');
 const gameBlockElement = document.querySelector('.game');
 
+const instructionsElement = document.querySelector('#instructions');
+
 const gameContainerElement = document.querySelector('.game-container');
 
 class AudioController {
   constructor() {
-    this.bgMusic = new Audio('../assets/games/rask-vienoda/audio/creepy.mp3');
+    this.bgMusic = new Audio('../assets/games/rask-vienoda/audio/tic-tac.mp3');
     this.flipSound = new Audio('../assets/games/rask-vienoda/audio/flip.wav');
     this.matchSound = new Audio('../assets/games/rask-vienoda/audio/match.wav');
     this.victorySound = new Audio(
@@ -20,7 +23,7 @@ class AudioController {
     this.gameOverSound = new Audio(
       '../assets/games/rask-vienoda/audio/gameOver.wav'
     );
-    this.bgMusic.volume = 0;
+    this.bgMusic.volume = 0.5;
     this.bgMusic.loop = true;
   }
   startMusic() {
@@ -53,7 +56,12 @@ class MixOrMatch {
     this.timeRemaining = totalTime;
     this.timer = document.getElementById('time-remaining');
     this.ticker = document.getElementById('flips');
+    this.result = document.getElementById('result');
+    this.gameResultsContainer = document.querySelector(
+      '.game-results-container'
+    );
     this.audioController = new AudioController();
+    this.gameStoped = false;
   }
 
   startGame() {
@@ -62,6 +70,7 @@ class MixOrMatch {
     this.cardToCheck = null;
     this.matchedCards = [];
     this.busy = true;
+    this.gameStoped = false;
     setTimeout(() => {
       this.audioController.startMusic();
       this.shuffleCards(this.cardsArray);
@@ -82,12 +91,16 @@ class MixOrMatch {
   gameOver() {
     clearInterval(this.countdown);
     this.audioController.gameOver();
-    document.getElementById('game-over-text').classList.add('visible');
+    this.gameResultsContainer.classList.remove('hide');
+    this.result.innerText = `📖 Deja, nelaimėjote. Reiktų pasitempti...`;
+    this.gameStoped = true;
   }
   victory() {
     clearInterval(this.countdown);
     this.audioController.victory();
-    document.getElementById('victory-text').classList.add('visible');
+    this.gameResultsContainer.classList.remove('hide');
+    this.result.innerText = `🏆 Sveikiname, laimėjote!`;
+    this.gameStoped = true;
   }
   hideCards() {
     this.cardsArray.forEach((card) => {
@@ -96,7 +109,7 @@ class MixOrMatch {
     });
   }
   flipCard(card) {
-    if (this.canFlipCard(card)) {
+    if (!this.gameStoped && this.canFlipCard(card)) {
       this.audioController.flip();
       this.totalClicks++;
       this.ticker.innerText = this.totalClicks;
@@ -159,11 +172,13 @@ const generateCards = (data, location) => {
   gameBlockElement.style.height = '85%';
 
   data.forEach((x) => {
+    console.log(x);
     const card = document.createElement('div');
     const cardBack = document.createElement('div');
     const cardFront = document.createElement('div');
     const cardBackImg = document.createElement('img');
     const cardFrontImg = document.createElement('img');
+    const cardFrontText = document.createElement('p');
 
     card.classList.add('card');
 
@@ -175,30 +190,19 @@ const generateCards = (data, location) => {
 
     cardBackImg.src = x.back;
     cardFrontImg.src = x.front;
+    cardFrontText.innerText = x.text;
 
     cardBack.appendChild(cardBackImg);
-    cardFront.appendChild(cardFrontImg);
+    cardFront.append(cardFrontImg, cardFrontText);
 
     card.append(cardBack, cardFront);
 
     location.appendChild(card);
   });
-
-  let cards = Array.from(document.getElementsByClassName('card'));
-  let game = new MixOrMatch(100, cards);
-  cards.forEach((card) => {
-    card.addEventListener('click', () => {
-      game.flipCard(card);
-    });
-  });
-
-  game.startGame();
 };
 
 // Events
 document.addEventListener('DOMContentLoaded', async () => {
-  wrapperElement.style.backgroundColor = `var(--extra-1-color)`;
-
   let data = await (await fetch('../data/rask-vienoda.json')).json();
 
   let easyData = data.slice(0, 10);
@@ -209,6 +213,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     startBtnEasyElement.classList.add('hide');
     startBtnMediumElement.classList.add('hide');
     startBtnHardElement.classList.add('hide');
+    instructionsElement.classList.add('hide');
+    containerElement.style.backgroundImage = 'url("")';
 
     gameContainerElement.classList.add('easy');
 
@@ -229,6 +235,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     startBtnEasyElement.classList.add('hide');
     startBtnMediumElement.classList.add('hide');
     startBtnHardElement.classList.add('hide');
+    instructionsElement.classList.add('hide');
+    containerElement.style.backgroundImage = 'url("")';
 
     gameContainerElement.classList.add('medium');
 
@@ -249,6 +257,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     startBtnEasyElement.classList.add('hide');
     startBtnMediumElement.classList.add('hide');
     startBtnHardElement.classList.add('hide');
+    instructionsElement.classList.add('hide');
+    containerElement.style.backgroundImage = 'url("")';
 
     gameContainerElement.classList.add('hard');
 

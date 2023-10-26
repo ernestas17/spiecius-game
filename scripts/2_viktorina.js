@@ -123,8 +123,6 @@ const resetState = () => {
 };
 // Events
 document.addEventListener('DOMContentLoaded', async () => {
-  wrapperElement.style.backgroundColor = `var(--extra-1-color)`;
-
   const data = await (await fetch('../data/viktorina.json')).json();
 
   questions = data.sort(() => Math.random() - 0.5).slice(0, 15);

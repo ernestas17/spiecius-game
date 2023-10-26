@@ -19,6 +19,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="../assets/general/images/logo/favicon.png"
+      type="image/png"
+    />
     <!-- Custom JS -->
     <script src="../scripts/1_header.js" defer></script>
     <script src="../scripts/2_delione.js" defer></script>
@@ -31,15 +37,19 @@
     <main>
       <div class="wrapper">
         <div class="container">
-          <div class="headline">
-            <h1>Dėlionė</h1>
-            <p id="instructions">Instrukcija</p>
-          </div>
-          <div class="game">
-            <div></div>
-            <div class="game__controls">
+          <div class="headline-container">
+            <div class="headline">
+              <h1>Dėlionė</h1>
+              <p id="instructions">
+                „Spiečius“ rasite keturiolikoje Lietuvos miestų!
+                <br />Pabandykite sutverti „Spiečius“ žemėlapio dėlionę.
+              </p>
+              <img src="../assets/games/delione/map.png" alt="" />
               <button id="start-btn" class="btn btn-start">PRADĖTI</button>
             </div>
+          </div>
+          <div class="game-container hide">
+            <div id="forPuzzle"></div>
           </div>
         </div>
       </div>
