@@ -1,6 +1,7 @@
 // Variables
 const wrapperElement = document.querySelector('.wrapper');
 const containerElement = document.querySelector('.container');
+const gameControlsElement = document.querySelector('.game__controls');
 const startBtnEasyElement = document.querySelector('#start-btn-easy');
 const startBtnMediumElement = document.querySelector('#start-btn-medium');
 const startBtnHardElement = document.querySelector('#start-btn-hard');
@@ -210,9 +211,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   let hardData = data.slice(0, 30);
 
   startBtnEasyElement.addEventListener('click', () => {
-    startBtnEasyElement.classList.add('hide');
-    startBtnMediumElement.classList.add('hide');
-    startBtnHardElement.classList.add('hide');
+    gameControlsElement.classList.add('hide');
+
     instructionsElement.classList.add('hide');
     containerElement.style.backgroundImage = 'url("")';
 
@@ -232,9 +232,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   startBtnMediumElement.addEventListener('click', () => {
-    startBtnEasyElement.classList.add('hide');
-    startBtnMediumElement.classList.add('hide');
-    startBtnHardElement.classList.add('hide');
+    gameControlsElement.classList.add('hide');
+
     instructionsElement.classList.add('hide');
     containerElement.style.backgroundImage = 'url("")';
 
@@ -254,9 +253,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   startBtnHardElement.addEventListener('click', () => {
-    startBtnEasyElement.classList.add('hide');
-    startBtnMediumElement.classList.add('hide');
-    startBtnHardElement.classList.add('hide');
+    gameControlsElement.classList.add('hide');
+
     instructionsElement.classList.add('hide');
     containerElement.style.backgroundImage = 'url("")';
 
